@@ -2,10 +2,11 @@ package br.com.assembly.mudi.dto;
 
 import br.com.assembly.mudi.model.Pedido;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 public class RequisicaoNovoPedido {
 	
-	@NotBlank
+	@NotBlank @Size(min = 5, max = 20)
 	private String nomeProduto;
 	
 	@NotBlank
