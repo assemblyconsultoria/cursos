@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>br.com.assembly</groupId>
 	<artifactId>mudi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>mudi</name>
-	<description>Demo project for Spring Boot</description>
+	<description>API Mudi</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -1,13 +1,22 @@
 package br.com.assembly.mudi.dto;
 
 import br.com.assembly.mudi.model.Pedido;
+import jakarta.validation.constraints.NotBlank;
 
 public class RequisicaoNovoPedido {
-
+	
+	@NotBlank
 	private String nomeProduto;
+	
+	@NotBlank
 	private String urlProduto;
+	
+	@NotBlank
 	private String urlImagem;
+	
 	private String descricao;
+	
+	
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
@@ -32,6 +41,7 @@ public class RequisicaoNovoPedido {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 	public Pedido toPedido() {
 		Pedido pedido = new Pedido();
 		pedido.setDescricao(descricao);
