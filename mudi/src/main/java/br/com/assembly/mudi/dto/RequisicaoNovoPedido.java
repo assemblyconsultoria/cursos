@@ -1,6 +1,7 @@
 package br.com.assembly.mudi.dto;
 
 import br.com.assembly.mudi.model.Pedido;
+import br.com.assembly.mudi.model.StatusPedido;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
@@ -49,6 +50,7 @@ public class RequisicaoNovoPedido {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlImagem(urlImagem);
 		pedido.setUrlProduto(urlProduto);
+		pedido.setStatus(StatusPedido.AGUARDANDO);
 		return pedido;
 	}
 	
